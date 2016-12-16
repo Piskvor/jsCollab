@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Šermířský metronom</title>
+    <script type="text/javascript">
+
+        var nahodne = 0;
+        function generator() {
+            do {
+                var noveNahodne = Math.floor((Math.random() * 5) + 1);
+            } while (nahodne == noveNahodne);
+            nahodne = noveNahodne;
+
+            if (nahodne == "1") {
+                alert("Prima!");
+            }
+            else if (nahodne == "2") {
+                alert("Sekunda!");
+            }
+            else if (nahodne == "3") {
+                alert("Tercie!");
+            }
+            else if (nahodne == "4") {
+                alert("Kvarta!");
+            }
+            else if (nahodne == "5") {
+                alert("Kvinta!");
+            }
+
+            return nahodne;
+
+        }
+
+        function interval() {
+            var Interval = setInterval("Interval()", x * 1000);
+        }
+
+        function casovac() {
+            var casovac = setTimeout("trvani()", y * 60 * 1000);
+        }
+
+    </script>
+</head>
+
+<body>
+    <div style="margin-top:150px; margin-left:200px">
+    <label for="interval">Interval figur:</label> <input type="text" id="interval"><!-- `label for` odkazuje na `input id` -->
+    </div>
+    <div style="margin-top:10px; margin-left:200px">
+        <label>Trvání cvičení: <input type="text" id="trvani"></label><!-- pokud je input hned vedle labelu, je možné ho udělat takhle, a není třeba vypisovat label ID -->
+    </div>
+    <div style="margin-top:10px; margin-left:200px">
+        <input type="button" value="spustit metronom" onclick="generator()">
+    </div>
+    <div style="margin-top:10px; margin-left:200px">
+        <input type="button" value="vypnout metronom" onclick="generator()">
+    </div>
+</body>
+</html>
