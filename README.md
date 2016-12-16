@@ -5,7 +5,7 @@
 - Chromácká [DevTools Console](https://developers.google.com/web/tools/chrome-devtools/console/) dělá totéž, ale v Chromu (`Ctrl+Shift+J`)
 - IE není browser, to je monstrum s chapadly, ale prý to má někde v Developer Tools (`F12`)  
 
-###Příklad:
+### Příklad:
 
 `unreachable code after return statement sermirsky-metronom.html:13:16`
 
